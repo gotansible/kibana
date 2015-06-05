@@ -1,0 +1,13 @@
+---
+
+- name: service - setup and run
+  runit:
+    name: "{{ kibana_service_name }}"
+    enabled: yes
+    state: up
+    timeout: 10
+    user: "{{ kibana_user }}"
+    command: "{{ kibana_install_dir }}/current/bin/kibana -c {{ kibana_config_dir }}/kibana.yml"
+    env_vars: {}
+  register: kibana_service_status
+

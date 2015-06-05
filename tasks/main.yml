@@ -53,11 +53,4 @@
     mode=0644
 
 - name: service
-  include: runit_service.yml
-  vars:
-    service_name: "{{ kibana_service_name }}"
-    service_user: "{{ kibana_user }}"
-    service_command: "{{ kibana_install_dir }}/current/bin/kibana -c {{ kibana_config_dir }}/kibana.yml"
-    service_env_vars: {}
-
-
+  include: service.yml
