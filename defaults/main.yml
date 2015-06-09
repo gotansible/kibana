@@ -11,3 +11,6 @@ kibana_install_dir: /opt/kibana
 kibana_build_folder: /tmp/kibana
 kibana_config_dir: /etc/kibana
 kibana_log_dir: /var/log/kibana
+
+kibana_elasticsearch_url: "http://localhost:9200"
+ 
