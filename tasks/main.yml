@@ -51,6 +51,9 @@
     owner={{ kibana_user }}
     group={{ kibana_group }}
     mode=0644
+  notify: restart kibana
+  tags:
+    - config
 
 - name: service
   include: service.yml
